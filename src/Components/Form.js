@@ -58,7 +58,7 @@ const Form = (props) => {
           {!pending && <input type="submit" className="form-control btn btn-outline-primary mt-5" value="Submit" />}
           {pending && <input type="submit" className="form-control btn btn-outline-primary mt-5" value="Submitting..." />}
       </form>
-      { submitted && <p>Thank you for signing up {formData.occupation} {formData.username} from {formData.country}!</p> }
+      { submitted && <p className="text-center">Thank you for signing up {formData.occupation} {formData.username} from {formData.country}!</p> }
     </div>
   )
 }
